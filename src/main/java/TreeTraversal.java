@@ -29,6 +29,8 @@ import java.util.Stack;
  * Where n = number of nodes, h = tree height, w = maximum tree width.
  * 
  * @param <T> the type of data stored in the tree nodes
+ * @version 1.0
+ * @see TreeNode
  */
 public class TreeTraversal<T> {
     
@@ -80,6 +82,7 @@ public class TreeTraversal<T> {
      * 
      * @param node the root node of the tree/subtree to traverse
      * @return a List containing all nodes in in-order sequence
+     * @see #inOrderTraversal(TreeNode)
      */
     public List<T> inOrderTraversalToList(TreeNode<T> node) {
         List<T> result = new ArrayList<>();
@@ -148,6 +151,7 @@ public class TreeTraversal<T> {
      * 
      * @param node the root node of the tree/subtree to traverse
      * @return a List containing all nodes in pre-order sequence
+     * @see #preOrderTraversal(TreeNode)
      */
     public List<T> preOrderTraversalToList(TreeNode<T> node) {
         List<T> result = new ArrayList<>();
@@ -217,6 +221,7 @@ public class TreeTraversal<T> {
      * 
      * @param node the root node of the tree/subtree to traverse
      * @return a List containing all nodes in post-order sequence
+     * @see #postOrderTraversal(TreeNode)
      */
     public List<T> postOrderTraversalToList(TreeNode<T> node) {
         List<T> result = new ArrayList<>();
@@ -371,6 +376,8 @@ public class TreeTraversal<T> {
      * 
      * @param root the root node of the tree to traverse
      * @return a List containing all nodes in pre-order sequence
+     * @see #preOrderTraversal(TreeNode)
+     * @see #preOrderTraversalToList(TreeNode)
      */
     public List<T> iterativePreOrder(TreeNode<T> root) {
         List<T> result = new ArrayList<>();
