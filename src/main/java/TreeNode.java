@@ -1,3 +1,6 @@
+/**
+* Node class for Binary Search Tree.
+*/
 public class TreeNode<T> {
     public T data;
     public TreeNode<T> left;
